@@ -1,0 +1,21 @@
+.services{display: flex;
+  flex-direction: column;
+  text-align: center;
+gap: 2em;}
+.service{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2em;
+}
+.service-box{
+  background-color: green;
+  padding: 1em;
+  box-shadow: 3px 5px 3px rgb(5, 85, 6);
+  justify-content: center;
+  text-align: center;
+}
+.service-box .bi{
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+ 
+}

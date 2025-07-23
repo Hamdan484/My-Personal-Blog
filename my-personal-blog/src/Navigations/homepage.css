@@ -1,0 +1,59 @@
+
+body{
+  background-color: #1e1e1ec1;
+  color: #fff;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.homepage-particulars{
+  margin-left: 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+  height: 100vh;
+}
+
+.homepage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5em;
+  font-size: large;
+}
+img{width: 15em;
+border-radius: 50pc;
+height: 100%;
+margin-right: 1em;
+margin-top: 1em;}
+.name-highlight{
+  color: rgb(47, 255, 92);
+  font-weight: 900;
+  font-size: 1.4em;
+}
+.social-media-handles{
+  gap: 1em;
+  display: flex;
+  font-size: 2em;
+  margin: 1em;
+}
+.bi-facebook, .bi-linkedin{
+  color:blue;
+}
+.bi-instagram{
+  color: orangered;
+}
+
+ .homepage button{
+  padding: 1em 5em;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 4px 2px 12px #fff;
+}

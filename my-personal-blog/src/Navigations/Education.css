@@ -1,0 +1,64 @@
+.education {
+  display: flex;
+  gap: 1em;
+}
+
+.range {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.range button {
+  font-weight: 700;
+  color: #222;
+  box-shadow: none;
+}
+
+#h1 {
+  text-align: center;
+}
+
+.write-up {
+  background-color: aliceblue;
+  color: black;
+  padding: 1em;
+}
+
+.write-ups {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.circle {
+  --percentage: 90; 
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #4caf50 calc(var(--percentage) * 1%),
+    #e0e0e0 0
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  position: relative;
+}
+#c1{
+   --percentage: 80; 
+}
+#c2{ --percentage: 85; }
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+h1{text-align: center;}
+.skill-cercle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

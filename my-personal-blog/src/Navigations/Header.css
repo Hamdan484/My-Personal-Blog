@@ -1,0 +1,21 @@
+
+ .links nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.links nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.links nav a:hover {
+  color: #00bcd4;
+}
+
+
+
+
