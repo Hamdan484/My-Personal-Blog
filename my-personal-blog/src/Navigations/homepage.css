@@ -9,13 +9,15 @@ body{
   
   
 }
+h1{margin-bottom: 1rem;}
 .homepage-particulars{
-  margin-left: 1em;
+  margin-left: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   line-height: 1.6;
+  font-size: 1.8rem;
   height: 100vh;
 }
 
@@ -24,24 +26,27 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 5em;
+  gap: 5rem;
   font-size: large;
+
 }
-img{width: 15em;
+img{width: 15rem;
 border-radius: 50pc;
 height: 100%;
-margin-right: 1em;
-margin-top: 1em;}
+margin-right: 1rem;
+margin-top: 1rem;}
 .name-highlight{
   color: rgb(47, 255, 92);
   font-weight: 900;
-  font-size: 1.4em;
+  font-size: 1.4rem;
 }
 .social-media-handles{
-  gap: 1em;
+  gap: 1rem;
   display: flex;
-  font-size: 2em;
-  margin: 1em;
+  font-size: 2rem;
+  margin: 1rem;
+   animation: handles 1s ease 1s 1 forwards;
+   opacity: 0;
 }
 .bi-facebook, .bi-linkedin{
   color:blue;
@@ -50,10 +55,83 @@ margin-top: 1em;}
   color: orangered;
 }
 
- .homepage button{
-  padding: 1em 5em;
-  border-radius: 5px;
+ .homepage-particulars button{
+  padding: 1rem 5rem;
+  border-radius: .5rem;
   font-weight: 600;
   color: #333;
-  box-shadow: 4px 2px 12px #fff;
+  box-shadow: .6rem .2rem .5rem #fff;
+  animation: button 1s ease 1.5s 1 forwards;
+   opacity: 0;
+
+}
+.first-animation{
+  animation: slideInleft 1s ease .6s 1 forwards;
+}
+@keyframes head {
+  from{transform: translateX(-200px);}
+  to{transform: translateX(0);
+  opacity: 1;}
+}
+@keyframes slideInleft {
+  from{transform: translateX(-150px);}
+  to{transform: translateX(0);
+  opacity: 1;}
+}
+@keyframes button {
+  from{transform: translateX(-200px);}
+  to{transform: translateX(0);
+  opacity: 1;}
+  
+  
+}
+@keyframes handles {
+  from{transform: translateX(-200px);}
+  to{transform: translateX(0);
+  opacity: 1;}
+}
+
+
+/*320-600 phones, 600-1024 tablets,1024-1440 - laptops, 1600 plus-large screens*/
+#h1{
+  justify-content: left;
+  display: flex;
+   animation: head 1s ease 0s 1 forwards;
+  
+}
+@media (max-width:100rem) {
+
+
+}
+@media (max-width:76.3rem) {
+ html{font-size: 80%;}
+ h1{color: blue;}
+}
+@media (max-width:64rem) {
+ html{font-size: 60%;}
+ h1{color: green;}
+}
+@media (max-width:37.5rem) {
+ html{font-size: 50%;}
+ h1{color: skyblue;}
+ .homepage-particulars{
+  gap: .1rem;}
+  img{border-radius: 0.6em;
+  box-shadow: 1px 1px 1px rgba(0, 50, 80, .6);
+  
+  
+}
+.homepage{
+  display: flex;
+  flex-direction: column;
+}
+.range{display: flex;}
+  .education{display: flex;
+  flex-direction: column;};
+  .contact{display: flex;
+  flex-direction: column-reverse;}
+
+  
+  h1{margin-top: -3em;}
+
 }

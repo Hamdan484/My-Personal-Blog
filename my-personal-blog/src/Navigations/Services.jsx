@@ -7,14 +7,14 @@ function Services() {
       <h2>My Services</h2>
       <div className="service">
       <div className="service-box">
-        <i class="bi bi-filetype-css"></i>
+        <i className="bi bi-filetype-css"></i>
         <h2>CSS & UI DESIGN</h2>
         <p>
           Beautiful, responsive layouts using modern CSS, Flexbox, and Grid.
         </p>
       </div>
       <div className="service-box">
-        <i class="bi bi-file-code"></i>
+        <i className="bi bi-file-code"></i>
         <h2>CSS & UI DESIGN</h2>
         <p>
           I build clean, semantic HTML5 pages optimized for accessibility and
@@ -22,7 +22,7 @@ function Services() {
         </p>
       </div>
       <div className="service-box">
-        <i class="bi bi-filetype-js"></i>
+        <i className="bi bi-filetype-js"></i>
         <h2>JavaScript functionality</h2>
         <p>
           Interactive features like form validation, dynamic content, and DOM
@@ -30,7 +30,7 @@ function Services() {
         </p>
       </div>
       <div className="service-box">
-        <i class="bi bi-filetype-jsx"></i>
+        <i className="bi bi-filetype-jsx"></i>
         <h2>React Web Apps</h2>
         <p>
           Single-page apps with React: fast, scalable, and component-driven

@@ -1,12 +1,14 @@
 .education {
   display: flex;
-  gap: 1em;
+  gap: 1rem;
 }
 
+button{padding: 1rem 2rem;
+border-radius: .2rem;}
 .range {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .range button {
@@ -22,19 +24,19 @@
 .write-up {
   background-color: aliceblue;
   color: black;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .write-ups {
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .circle {
   --percentage: 90; 
-  width: 120px;
-  height: 120px;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
   background: conic-gradient(
     #4caf50 calc(var(--percentage) * 1%),
@@ -43,7 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 1.2rem;
   position: relative;
 }
 #c1{
@@ -54,7 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 2rem;
 }
 h1{text-align: center;}
 .skill-cercle{
@@ -62,3 +64,4 @@ h1{text-align: center;}
   flex-direction: column;
   align-items: center;
 }
+h2{font-size: 2.2rem;}

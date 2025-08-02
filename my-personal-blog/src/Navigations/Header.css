@@ -1,20 +1,29 @@
-
+.links{background-color:rgb(3, 3, 49);
+padding: 1rem;
+width: 100%;
+top: 0;
+z-index: 100;
+position: fixed;}
  .links nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: 
+  space-around;
   align-items: center;
+
 }
 
 .links nav a {
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  font-size: 1.02rem;
   transition: color 0.3s ease;
+  
 }
 
 .links nav a:hover {
   color: #00bcd4;
 }
+
 
 
 

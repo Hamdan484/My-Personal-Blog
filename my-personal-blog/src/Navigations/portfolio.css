@@ -1,0 +1,12 @@
+.projects{
+  display: flex;
+  padding: 1emrem;
+  gap: 1rem;
+
+}
+.project img{
+margin: .5rem;
+border-radius: .2rem;
+object-fit: cover;
+width: 50%;
+}

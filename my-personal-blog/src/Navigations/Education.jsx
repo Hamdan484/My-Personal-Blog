@@ -4,7 +4,7 @@ import "./Education.css";
 function Education() {
   return (
     <div>
-      <h1 id="h1">My Education Life</h1>
+      <h1>My Education Life</h1>
       <div className="education">
         <div className="range">
           <button>Basic</button>
@@ -12,7 +12,7 @@ function Education() {
           <button>Tertiary</button>
         </div>
         <div className="write-ups">
-          <div className="write-up">
+          <div className="write-up basic">
             <h3>Mole D/A JHS</h3>I grew up in a small, close-knit community
             nestled in the Savannah Region of Ghana—a place where everyone knew
             each other by name, and the rhythm of life was shaped by tradition,
@@ -25,7 +25,7 @@ function Education() {
             determination, and the importance of education as a tool for
             transformation.
           </div>
-          <div className="write-up">
+          <div className="write-up high">
             <h3>TAMALE SENIOR HIGH</h3>
             <h4>TAMALE</h4>
             In 2021, I was privileged to gain admission into Tamale Senior High
@@ -41,7 +41,7 @@ function Education() {
             others. The experiences, friendships, and leadership roles I
             embraced during those years continue to inspire and guide me today.{" "}
           </div>
-          <div className="write-up">
+          <div className="write-up uni">
             <h3>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY</h3>
             <h4>KUMASI</h4>
             In 2024, I was honored to gain admission into the prestigious Kwame
@@ -78,32 +78,32 @@ function Education() {
       <div className="skills">
         <div className="skill-cercle">
           <h2>CSS</h2>
-          <div class="circle" data-percent="90">
-            <div class="inner-circle">
+          <div className="circle" data-percent="90">
+            <div className="inner-circle">
               <span>90%</span>
             </div>
           </div>
         </div>
         <div className="skill-cercle">
           <h2>HTML</h2>
-          <div class="circle" data-percent="80" id="c1">
-            <div class="inner-circle">
+          <div className="circle" data-percent="80" id="c1">
+            <div className="inner-circle">
               <span>80%</span>
             </div>
           </div>
         </div>
         <div className="skill-cercle">
           <h2>JavaScript</h2>
-          <div class="circle" data-percent="85" id="c2">
-            <div class="inner-circle">
+          <div className="circle" data-percent="85" id="c2">
+            <div className="inner-circle">
               <span>85%</span>
             </div>
           </div>
         </div>
         <div className="skill-cercle">
           <h2>REACT</h2>
-          <div class="circle" data-percent="85" id="c2">
-            <div class="inner-circle">
+          <div className="circle" data-percent="85" id="c2">
+            <div className="inner-circle">
               <span>85%</span>
             </div>
           </div>
