@@ -51,7 +51,7 @@ border-radius: .2rem;}
 #c1{
    --percentage: 80; 
 }
-#c2{ --percentage: 85; }
+#c2,#c3{ --percentage: 85; }
 .skills{
   display: flex;
   justify-content: center;

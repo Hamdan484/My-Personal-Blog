@@ -9,6 +9,7 @@ position: fixed;}
   justify-content: 
   space-around;
   align-items: center;
+  width: 100%;
 
 }
 
@@ -19,7 +20,6 @@ position: fixed;}
   transition: color 0.3s ease;
   
 }
-
 .links nav a:hover {
   color: #00bcd4;
 }

@@ -102,7 +102,7 @@ function Education() {
         </div>
         <div className="skill-cercle">
           <h2>REACT</h2>
-          <div className="circle" data-percent="85" id="c2">
+          <div className="circle" data-percent="85" id="c3">
             <div className="inner-circle">
               <span>85%</span>
             </div>

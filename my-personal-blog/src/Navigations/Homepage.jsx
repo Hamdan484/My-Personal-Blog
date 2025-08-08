@@ -6,17 +6,15 @@ import Services from "./Services";
 import Education from "./Education";
 import Portfolio from "./Portfolio";
 
-
-
 function Homepage() {
   return (
     <>
       <div className="homepage">
         <div className="homepage-particulars">
           <div className="first-animation">
-            <h1 id="h1">Hello</h1> <br />I am{" "}
-            <span className="name-highlight">Hamdan Ibrahim</span> <br />
-            Frontend Developer | Student <br />
+            <h1 id="h1">Hello</h1> <p />I am{" "}
+            <span className="name-highlight">Hamdan Ibrahim</span> <p />
+            Frontend Developer | Student <p />
             I'm a web developer who loves turning ideas into sleek, functional
             web experiences. I specialize in front-end development using HTML,
             CSS, JavaScript, and React — but I am always learning and evolving.
@@ -42,22 +40,23 @@ function Homepage() {
           </div>
         </div>
         <div>
-          <section id="Services">
-            <Services />
-          </section>
-         
-          <section id="Education">
-            <Education />
-          </section>
-          <section id="Portfolio">
-            {" "}
-            <Portfolio />
-          </section>
-           <section id="Contact">
-            <Contact />
-          </section>
+          <div className="section-container">
+            <section id="Services">
+              <Services />
+            </section>
+
+            <section id="Education">
+              <Education />
+            </section>
+            <section id="Portfolio">
+              {" "}
+              <Portfolio />
+            </section>
+            <section id="Contact">
+              <Contact />
+            </section>
+          </div>
         </div>
-       
       </div>
     </>
   );
