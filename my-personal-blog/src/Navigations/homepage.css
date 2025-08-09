@@ -69,7 +69,7 @@ img {
   animation: button 1s ease 1.5s 1 forwards;
   opacity: 0;
 }
-.first-animation {
+.first-animation *:not(h1) {
   animation: slideInleft 1s ease 0.6s 1 forwards;
 }
 @keyframes head {
@@ -132,9 +132,7 @@ img {
   html {
     font-size: 60%;
   }
-  h1 {
-    color: green;
-  }
+  
 }
 @media (max-width: 30rem) {
   html {
@@ -165,8 +163,12 @@ img {
     display: none;
   }
    .service {
-    display: none;
+    display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
   }
+  
 
   
 

@@ -1,18 +1,20 @@
 import React from "react";
 import "./Education.css";
+import { useState } from "react";
 
 function Education() {
+  const [activeSection,setactiveSection]=useState("Basic")
   return (
     <div>
       <h1>My Education Life</h1>
       <div className="education">
         <div className="range">
-          <button>Basic</button>
-          <button>Middle Level</button>
-          <button>Tertiary</button>
+          <button onClick={()=>{setactiveSection("Basic")}}>Basic</button>
+          <button onClick={()=>{setactiveSection("Middle Level")}}>Middle Level</button>
+          <button onClick={()=>{setactiveSection("Tertiary")}}>Tertiary</button>
         </div>
         <div className="write-ups">
-          <div className="write-up basic">
+          <div className={activeSection==="Basic"?"visible":"hidden"} id="Basic">
             <h3>Mole D/A JHS</h3>I grew up in a small, close-knit community
             nestled in the Savannah Region of Ghana—a place where everyone knew
             each other by name, and the rhythm of life was shaped by tradition,
@@ -25,7 +27,7 @@ function Education() {
             determination, and the importance of education as a tool for
             transformation.
           </div>
-          <div className="write-up high">
+          <div className={activeSection==="Middle Level"?"visible":"hidden"} id="middle-level">
             <h3>TAMALE SENIOR HIGH</h3>
             <h4>TAMALE</h4>
             In 2021, I was privileged to gain admission into Tamale Senior High
@@ -41,7 +43,7 @@ function Education() {
             others. The experiences, friendships, and leadership roles I
             embraced during those years continue to inspire and guide me today.{" "}
           </div>
-          <div className="write-up uni">
+          <div className={activeSection==="Tertiary"?"visible":"hidden"} id="Tertiary">
             <h3>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY</h3>
             <h4>KUMASI</h4>
             In 2024, I was honored to gain admission into the prestigious Kwame

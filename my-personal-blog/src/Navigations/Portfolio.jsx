@@ -1,8 +1,26 @@
 import React from "react";
 import estate from "../assets/estate.jpg";
-import './portfolio.css'
+import "./portfolio.css";
+import Projects from "../Navigations/Projects";
 
 function Portfolio() {
+  
+  const projectItems = Projects.map((e) => (
+
+    <ul key={e.name}>
+      <div className="projects">
+        <li>
+          <div className="project">
+            <h2>{e.name}</h2>
+            <a href={e.link}>
+              <img src={e.image} alt="real-estate-website" />
+            </a>
+          </div>
+          
+        </li>
+      </div>
+    </ul>
+  ));
   return (
     <div className="Portfolio">
       <h1>Portfolio</h1>
@@ -11,14 +29,7 @@ function Portfolio() {
         <button>Personal projects</button>
         <button>Contracts</button>
       </div>
-      <div className="projects">
-        <div className="project">
-          <h2>Real Estate Website</h2>
-          <a href="https://hamdan484.github.io/Real-Estate-Website/">
-          <img src={estate} alt="real-estate-website" />
-          </a>
-        </div>
-      </div>
+      {projectItems}
     </div>
   );
 }

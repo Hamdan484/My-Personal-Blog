@@ -1,7 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [comment, setComment] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const response={name,email,subject,comment}
+    fetch('http://localhost:5000/contacts',{
+      method:'POST',
+      headers:{"content-type":"application/json"},
+      body: JSON.stringify(response)
+    })
+  };
+
   return (
     <div className="contact-header">
       <h1>Contact Me</h1>
@@ -23,7 +37,11 @@ function Contact() {
             </div>
             <div className="exact-item">
               <h3>Email</h3>
-              <span>ibrahimhamsik3@gmail.com</span>
+              <span>
+                <a href="mailto:ibrahimhamsik3@gmail.com">
+                  ibrahimhamsik3@gmail.com
+                </a>
+              </span>
             </div>
           </div>
           <div className="personal-details">
@@ -32,26 +50,47 @@ function Contact() {
             </div>
             <div className="exact-item">
               <h3>Call</h3>
-              <span>+233 597788861</span>
+              <span>
+                <a href="tel:+233597788861">+233 597788861</a>
+              </span>
             </div>
           </div>
         </div>
         <div className="messagint-channel">
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="form">
-              <input type="text" placeholder="Name" />
+              <input
+                type="text"
+                placeholder="Name"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input
+                type="email"
+                placeholder="Email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
             <div>
-              <input type="text" placeholder="Subject" />
+              <input
+                type="text"
+                placeholder="Subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
+              />
             </div>
             <div>
               <textarea
                 name="message"
                 id="message"
-                placeholder="Your text"
+                placeholder="Leave a comment "
+                value={comment}
+                onChange={(e) => setComment(e.target.value)}
               ></textarea>
             </div>
             <button>Submit</button>
